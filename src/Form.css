@@ -1,0 +1,81 @@
+/* Styles for the login/signup form container */
+.auth-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  max-width: 400px;
+  margin: 40px auto; 
+  padding: 24px; 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.auth-form-container input[type="email"],
+.auth-form-container input[placeholder="Password"],
+.auth-form-container input[type="password"],
+.auth-form-container input[type="text"] {
+  width: 100%; 
+  padding: 10px;
+  margin-bottom: 8px; 
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+/* Styles for buttons within the form */
+.auth-form-container button {
+  background-color: #1976d2; 
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%; 
+}
+
+.auth-form-container button:hover:not(:disabled) {
+  background-color: #1565c0; 
+}
+
+.auth-form-container button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Styles for error messages */
+.auth-form-container .error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Styles for links */
+.auth-form-container .form-link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.auth-form-container .form-link a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.auth-form-container .form-link a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for headings */
+.auth-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}

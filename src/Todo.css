@@ -1,0 +1,20 @@
+ .todo__list{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    border: 1px solid lightgray;
+    margin-bottom: 10px !important;
+ }
+
+
+.edit__modal {
+   position: 'fixed'; 
+   top: '50%'; 
+   left: '50%'; 
+   transform: 'translate(-50%, -50%)';
+   background-color: 'white';
+   padding: '20px';
+   border: '1px solid black';
+   z-index: 1000;
+}
